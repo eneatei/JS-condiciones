@@ -1,0 +1,17 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.contenedor {
+text-align: center;
+margin-top: 30px;
+}
+
+#flor {
+height: 500px;
+}
+
+.tx-flor {
+font-size: 30px;
+}

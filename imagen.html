@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click en la imagen</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="contenedor">
+    <img src="assets/img/flor.jpg" id="flor" onclick="
+        const flor = document.querySelector('#flor');
+        if (flor.style.border === '2px solid red') {
+            flor.style.border = 'none';
+        } else {
+            flor.style.border = '2px solid red';
+        }
+    "/>
+    <p class="tx-flor">Haz clic en la imagen ⬆️</p>
+</div>
+</body>
+</html>
