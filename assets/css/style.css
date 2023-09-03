@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 }
 
+/* Imagen.html */
 .contenedor {
 text-align: center;
 margin-top: 30px;
@@ -15,3 +16,43 @@ height: 500px;
 .tx-flor {
 font-size: 30px;
 }
+
+/* Stickers.html */
+.caja {
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+
+}
+
+.caja-stickers {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 30px;
+}
+
+.sticker{
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+}
+
+.sticker-img {
+width: 200px;
+}
+
+.caja-btn {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 30px;
+}
+
+.aviso {
+    padding-top: 15px;
+}
+

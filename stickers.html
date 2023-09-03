@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="caja">
+        <h1>Puedes seleccionar hasta 10 stickers en total</h1>
+        <div class="caja-stickers">
+            <div class="sticker">
+                <img class="sticker-img" src="assets/img/sticker1.png" alt="1">
+                <input type="number" class="input1" min="0" max="10" value="0">
+            </div>
+            <div class="sticker">
+                <img class="sticker-img" src="assets/img/sticker2.jpg" alt="2">
+                <input type="number" class="input2" min="0" max="10" value="0">
+            </div>
+            <div class="sticker">
+                <img class="sticker-img" src="assets/img/sticker3.jpg" alt="3">
+                <input type="number" class="input3" min="0" max="10" value="0">
+            </div>
+        </div>
+    </div>
+    <div class="caja-btn">
+        <button class="btn" onclick="calcularTotal()">
+            Calcular
+        </button>
+        <h3 class="aviso"></h3>
+    </div>
+
+    <script>
+        function calcularTotal() {
+            const input1 = document.querySelector(".input1");
+            const input2 = document.querySelector(".input2");
+            const input3 = document.querySelector(".input3");
+            const aviso = document.querySelector(".aviso");
+
+            const input1Value = +input1.value;
+            const input2Value = +input2.value;
+            const input3Value = +input3.value;
+
+            const total = input1Value + input2Value + input3Value;
+
+            if (total <= 10) {
+                aviso.textContent = 'Llevas ' + total + ' stickers';
+            } else {
+                aviso.textContent = 'Llevas demasiados stickers';
+            }
+        }
+    </script>
+</body>
+</html>
