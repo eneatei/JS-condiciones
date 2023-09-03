@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="caja-opciones">
+        <select id="opcion1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+        <select id="opcion2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+
+        <select id="opcion3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+    
+
+    <button onclick="verificarContrasena()">
+        Verificar
+    </button>
+    
+    <h3 class="contrasena"></h3>
+</div>
+    <script>
+        function verificarContrasena() {
+            const opcion1 = document.getElementById('opcion1');
+            const opcion2 = document.getElementById('opcion2');
+            const opcion3 = document.getElementById('opcion3');
+            const contrasena = document.querySelector('.contrasena');
+
+            const opcion1Value = opcion1.value;
+            const opcion2Value = opcion2.value;
+            const opcion3Value = opcion3.value;
+
+            const total = opcion1Value + opcion2Value + opcion3Value;
+
+            if (total === '911') {
+                contrasena.innerHTML = 'Contraseña 1 es correcta';
+            } else if (total === '714') {
+                contrasena.innerHTML = 'Contraseña 2 es correcta';
+            } else {
+                alert('La contraseña no coincide, intente de nuevo.');
+                contrasena.innerHTML = 'Contraseña incorrecta';
+            }
+        }
+    </script>
+</body>
+</html>

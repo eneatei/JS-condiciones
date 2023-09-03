@@ -53,6 +53,16 @@ padding-top: 30px;
 }
 
 .aviso {
-    padding-top: 15px;
+padding-top: 15px;
 }
 
+/* Contraseña.html */
+.caja-opciones {
+display: flex;
+flex-direction: row;
+gap: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
